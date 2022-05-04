@@ -8,19 +8,19 @@
       />
       <ul>
         <li>
-          <a href="/">Characters</a>
+          <a href="{{ route('characters') }}">Characters</a>
         </li>
         <li class="active">
-          <a href="/">Comics</a>
+          <a href="{{ route('home') }}">Comics</a>
         </li>
         <li>
-          <a href="/">Movies</a>
+          <a href="{{ route('movies') }}">Movies</a>
         </li>
         <li>
-          <a href="/">Tv</a>
+          <a href="{{ route('tv') }}">Tv</a>
         </li>
         <li>
-          <a href="/">Games</a>
+          <a href="{{ route('games') }}">Games</a>
         </li>
         <li>
           <a href="/">Collectibles</a>

@@ -12,7 +12,7 @@
   @include('partials/header')
 
   <main>
-    <h1>Questa è app</h1>
+    @yield('main-content')
   </main>
 
   @include('partials/footer')
