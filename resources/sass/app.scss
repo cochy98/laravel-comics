@@ -1,1 +1,40 @@
-//
+@import 'partials/_common';
+
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-logo {
+      width: 70px;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 1rem;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+
+        a {
+          text-decoration: none;
+          color: #2c3136;
+        }
+      }
+
+      li.active {
+        border-bottom: 3px solid #0282f9;
+      }
+
+      li.active a {
+        color: #0282f9;
+      }
+    }
+  }
+}
