@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="col-right">
-        <img src="images/dc-logo-bg.png" alt="Dc logo" />
+        <img src="{{ asset('images/dc-logo-bg.png') }}" alt="Dc logo" />
       </div>
     </div>
   </section>
@@ -59,27 +59,27 @@
         <li><a href="#">Follow us</a></li>
         <li>
           <a href="#">
-            <img src="images/footer-facebook.png" alt="FB Logo">
+            <img src="{{ asset('images/footer-facebook.png') }}" alt="FB Logo">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="images/footer-twitter.png" alt="Twitter Logo">
+            <img src="{{ asset('images/footer-twitter.png') }}" alt="Twitter Logo">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="images/footer-youtube.png" alt="Youtube Logo">
+            <img src="{{ asset('images/footer-youtube.png') }}" alt="Youtube Logo">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="images/footer-pinterest.png" alt="Pinterest Logo">
+            <img src="{{ asset('images/footer-pinterest.png') }}" alt="Pinterest Logo">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="images/footer-periscope.png" alt="Periscope Logo">
+            <img src="{{ asset('images/footer-periscope.png') }}" alt="Periscope Logo">
           </a>
         </li>
       </ul>

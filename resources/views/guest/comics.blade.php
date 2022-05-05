@@ -1,5 +1,7 @@
+{{-- Pagina 'comics' che estende il contenuto della pagina base 'app' --}}
 @extends('layout.app')
 
+{{-- Do un titolo a questa pagina (home) --}}
 @section('title', 'home')
 
 @section('main-content')
@@ -10,7 +12,7 @@
   <div class="container cards">
     <span class="section-description">Current series</span>
 
-    <!-- Ciclo sulle singole card, per il numero di card -->
+    <!-- Ricevo l'array 'comics' e ciclo sulle singole -->
     @foreach ($comics as $comic)
       <div class="card-box">
         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['type'] }}" class="card-image" />
@@ -22,40 +24,6 @@
     <a href="#" class="btn-more">Load more</a>
   </div>
 </section>
-<section id="main-nav">
-  <div class="container">
-    <ul>
-      <li>
-        <a href="#">
-          <img src="images/buy-comics-digital-comics.png" alt="Digital comics">
-          <p>Digital comics</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/buy-comics-merchandise.png" alt="Dc merchandise">
-          <p>Dc merchandise</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/buy-comics-subscriptions.png" alt="Subscription">
-          <p>Subscription</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/buy-comics-shop-locator.png" alt="Comic shop locator">
-          <p>Comic shop locator</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="images/buy-dc-power-visa.svg" alt="Dc power visa">
-          <p>Dc power visa</p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+{{-- Includo la section 'main-nav' --}}
+@include('partials/section-main-nav')
 @endsection
