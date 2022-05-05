@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  @include('partials/header')
+  {{-- Includo l'header nella mia pagina base e gli passo l'array contentente tutti i link --}}
+  @include('partials/header', ['links' => config('header-links')])
 
   <main>
     @yield('main-content')
