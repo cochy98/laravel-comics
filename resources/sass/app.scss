@@ -51,39 +51,6 @@ main {
         object-position: top;
         display: inherit;
       }
-
-      div.end-section {
-        height: 70px;
-        background-color: #0282f9;
-        position: relative;
-
-        div.item-cover {
-          position: absolute;
-          bottom: 1.5rem;
-          border: 1px solid white;
-
-          img {
-            width: 170px;
-            height: 250px;
-            object-fit: cover;
-          }
-
-          span {
-            position: absolute;
-            text-transform: uppercase;
-            color: white;
-            background-color: #00a9d9;
-            text-align: center;
-            font-size: .8rem;
-            padding: .2rem;
-          }
-
-          span:last-child {
-            bottom: 0;
-            width: 100%;
-          }
-        }
-      }
     }
 
     div.container.cards {
@@ -125,7 +92,76 @@ main {
       }
     }
 
-    div.container-details {}
+    div.start-details {
+      height: 70px;
+      background-color: #0282f9;
+      position: relative;
+
+      div.item-cover {
+        position: absolute;
+        bottom: 1.5rem;
+        border: 1px solid white;
+
+        img {
+          width: 170px;
+          height: 250px;
+          object-fit: cover;
+        }
+
+        span {
+          position: absolute;
+          text-transform: uppercase;
+          color: white;
+          background-color: #00a9d9;
+          text-align: center;
+          font-size: .8rem;
+          padding: .2rem;
+        }
+
+        span:last-child {
+          left: 0;
+          bottom: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    div.comic-details {
+      background-color: #ffffff;
+      padding: 5rem 0;
+
+      div.container {
+        display: flex;
+        justify-content: space-between;
+
+        div.col-left {
+          flex-basis: 70%;
+
+          h1.comic-title {
+            text-transform: uppercase;
+            color: #003f5e;
+          }
+
+          p.comic-description {
+            /* color: red; */
+          }
+        }
+
+        div.col-right {
+          background-color: red;
+        }
+      }
+    }
+
+    div.comic-specs {
+      height: 500px;
+      background-color: #f6f6f6;
+
+      div.container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
 
     div.more-cards {
       text-align: center;
