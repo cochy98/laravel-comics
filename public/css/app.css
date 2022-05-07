@@ -14,6 +14,61 @@ body {
   margin: 0 auto;
 }
 
+.min-hr {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 1px solid #e0dfdf;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.dark-blue {
+  color: #003f5e;
+}
+
+.light-blue {
+  color: #0cadde;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-basis-20 {
+  flex-basis: 20%;
+}
+
+.flex-basis-30 {
+  flex-basis: 30%;
+}
+
+.flex-basis-45 {
+  flex-basis: 45%;
+}
+
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+.flex-basis-55 {
+  flex-basis: 55%;
+}
+
+.flex-basis-70 {
+  flex-basis: 70%;
+}
+
+.flex-basis-80 {
+  flex-basis: 80%;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -127,30 +182,51 @@ main section#main-content div.comic-details {
   background-color: #ffffff;
   padding: 5rem 0;
 }
-main section#main-content div.comic-details div.container {
-  display: flex;
-  justify-content: space-between;
-}
-main section#main-content div.comic-details div.container div.col-left {
-  flex-basis: 70%;
-}
 main section#main-content div.comic-details div.container div.col-left h1.comic-title {
   text-transform: uppercase;
-  color: #003f5e;
+  margin: 0.6rem 0 1.7rem;
+  font-size: 1.7rem;
+}
+main section#main-content div.comic-details div.container div.col-left div.table {
+  background-color: #55ba59;
+  border-bottom: 2px solid #36793a;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+main section#main-content div.comic-details div.container div.col-left div.table .table-col-left {
+  border-right: 2px solid #36793a;
+  padding: 1.2rem 2rem;
+  color: #b3fe8e;
+}
+main section#main-content div.comic-details div.container div.col-left div.table .table-col-left span {
+  color: white;
+}
+main section#main-content div.comic-details div.container div.col-left div.table .table-col-right {
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0;
 }
 main section#main-content div.comic-details div.container div.col-left p.comic-description {
-  /* color: red; */
+  color: #363938;
+  line-height: 1.6rem;
 }
 main section#main-content div.comic-details div.container div.col-right {
-  background-color: red;
+  text-align: right;
+  text-transform: uppercase;
+  color: #4e5452;
+  font-size: 1.2rem;
 }
 main section#main-content div.comic-specs {
-  height: 500px;
+  border-top: 2px solid #e0dfdf;
   background-color: #f6f6f6;
+  padding-bottom: 8rem;
 }
-main section#main-content div.comic-specs div.container {
-  display: flex;
-  justify-content: space-between;
+main section#main-content div.comic-specs h1.sub-title {
+  margin: 1.8rem 0;
+}
+main section#main-content div.comic-specs p {
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 main section#main-content div.more-cards {
   text-align: center;
@@ -185,6 +261,31 @@ main section#main-nav ul li a img {
   width: 55px;
   height: 55px;
   margin-right: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section#details-main-nav {
+  background-color: #0282f9;
+}
+main section#details-main-nav ul {
+  list-style-type: none;
+}
+main section#details-main-nav ul li {
+  flex-basis: 25%;
+}
+main section#details-main-nav ul li a {
+  display: flex;
+  justify-content: space-between;
+  border-left: 2px solid white;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1.5rem 1rem;
+}
+main section#details-main-nav ul li a img {
+  width: 55px;
+  height: 55px;
   -o-object-fit: contain;
      object-fit: contain;
 }

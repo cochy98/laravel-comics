@@ -131,36 +131,65 @@ main {
       padding: 5rem 0;
 
       div.container {
-        display: flex;
-        justify-content: space-between;
-
         div.col-left {
-          flex-basis: 70%;
-
           h1.comic-title {
             text-transform: uppercase;
-            color: #003f5e;
+            margin: .6rem 0 1.7rem;
+            font-size: 1.7rem;
+          }
+
+          div.table {
+            background-color: #55ba59;
+            border-bottom: 2px solid #36793a;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+
+            .table-col-left {
+              border-right: 2px solid #36793a;
+              padding: 1.2rem 2rem;
+              color: #b3fe8e;
+
+              span {
+                color: white;
+              }
+            }
+
+            .table-col-right {
+              color: white;
+              text-align: center;
+              padding: 1.2rem 0;
+            }
+
           }
 
           p.comic-description {
-            /* color: red; */
+            color: #363938;
+            line-height: 1.6rem;
           }
         }
 
         div.col-right {
-          background-color: red;
+          text-align: right;
+          text-transform: uppercase;
+          color: #4e5452;
+          font-size: 1.2rem;
         }
       }
     }
 
     div.comic-specs {
-      height: 500px;
+      border-top: 2px solid #e0dfdf;
       background-color: #f6f6f6;
+      padding-bottom: 8rem;
 
-      div.container {
-        display: flex;
-        justify-content: space-between;
+      h1.sub-title {
+        margin: 1.8rem 0;
       }
+    }
+
+    div.comic-specs p {
+      font-weight: 500;
+      font-size: .9rem;
     }
 
     div.more-cards {
@@ -204,6 +233,36 @@ main {
           object-fit: contain;
         }
       }
+    }
+  }
+
+  section#details-main-nav {
+    background-color: #0282f9;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        flex-basis: 25%;
+
+        a {
+          display: flex;
+          justify-content: space-between;
+          border-left: 2px solid white;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 600;
+          padding: 1.5rem 1rem;
+
+          img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+          }
+        }
+      }
+
     }
   }
 }
