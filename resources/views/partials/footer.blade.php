@@ -5,11 +5,11 @@
         <div class="col">
           <h6>Dc comics</h6>
           <ul>
-            <li><a href="#">Characters</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">Games</a></li>
+            <li><a href="{{ route('guest-characters') }}">Characters</a></li>
+            <li><a href="{{ route('guest-comics') }}">Comics</a></li>
+            <li><a href="{{ route('guest-movies') }}">Movies</a></li>
+            <li><a href="{{ route('guest-tv') }}">TV</a></li>
+            <li><a href="{{ route('guest-games') }}">Games</a></li>
             <li><a href="#">Videos</a></li>
             <li><a href="#">News</a></li>
           </ul>
