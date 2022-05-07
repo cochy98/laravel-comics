@@ -84,11 +84,17 @@ main {
           object-position: top;
         }
 
-        .card-description {
-          padding: 0.8rem 0 1.2rem;
-          font-size: 0.8rem;
-          font-weight: 500;
+        a {
+          color: white;
+          text-decoration: none;
+
+          .card-description {
+            padding: 0.8rem 0 1.2rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
         }
+
       }
     }
 

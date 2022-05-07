@@ -143,7 +143,11 @@ main section#main-content div.container.cards div.card-box img.card-image {
   -o-object-position: top;
      object-position: top;
 }
-main section#main-content div.container.cards div.card-box .card-description {
+main section#main-content div.container.cards div.card-box a {
+  color: white;
+  text-decoration: none;
+}
+main section#main-content div.container.cards div.card-box a .card-description {
   padding: 0.8rem 0 1.2rem;
   font-size: 0.8rem;
   font-weight: 500;

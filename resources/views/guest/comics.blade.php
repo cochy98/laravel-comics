@@ -13,10 +13,14 @@
     <span class="section-description">Current series</span>
 
     <!-- Ricevo l'array 'comics' e ciclo sulle singole -->
-    @foreach ($comics as $comic)
+    @foreach ($comics as $key => $comic)
       <div class="card-box">
         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['type'] }}" class="card-image" />
-        <h6 class="card-description">{{ $comic['series'] }}</h6>
+        {{-- Con la funzione 'route' chiamo la pagina dei dettagli del fumetto e gli passo l'indice corrente --}}
+        {{-- <a href="{{ url('/comics', $key) }}"> --}}
+        <a href="{{ route('guest-comic-details', $key) }}">
+          <h6 class="card-description">{{ $comic['series'] }}</h6>
+        </a>
       </div>
     @endforeach
   </div>

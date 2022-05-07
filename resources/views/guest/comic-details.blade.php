@@ -18,8 +18,11 @@
     </div>
   </div>
 
+  {{--  § Inizio dettagli del fumetto --}}
   <div class="comic-details">
     <div class="container flex-justify-between">
+
+      {{-- ! Colonna sinistra contenente Titolo, descrizione e tabella con disponibilità e prezzo --}}
       <div class="col-left flex-basis-70">
         <h1 class="comic-title dark-blue">{{ $comic['title'] }}</h1>
         <div class="table d-flex">
@@ -32,15 +35,19 @@
         <p class="comic-description">{{ $comic['description'] }}</p>
       </div>
 
+      {{-- ! Colonna destra contenente un ADV --}}
       <div class="col-right">
         <h6>Advertisement</h6>
         <img src="{{ asset('images/pubb.jpg') }}" alt="ADV photo">
       </div>
     </div>
   </div>
+  {{--  § Fine dettagli del fumetto --}}
 
+  {{-- | Inizio specifiche del fumetto --}}
   <div class="comic-specs">
     <div class="container flex-justify-between">
+      {{-- # Colonna sinistra contenente le info sugli artisti e scrittori --}}
       <div class="flex-basis-45">
         <h1 class="sub-title dark-blue">Talent</h1>
         <div class="min-hr"></div>
@@ -55,6 +62,8 @@
         </div>
         <div class="min-hr"></div>
       </div>
+
+      {{-- # Colonna destra contentente le specifiche del fumetto --}}
       <div class="flex-basis-45">
         <h1 class="sub-title dark-blue">Specs</h1>
         <div class="min-hr"></div>
@@ -73,11 +82,10 @@
           <p class="flex-basis-70">{{ $comic['sale_date'] }}</p>
         </div>
         <div class="min-hr"></div>
-
       </div>
     </div>
-
   </div>
+  {{-- | Fine specifiche del fumetto --}}
 </section>
 <section id="details-main-nav">
   <div class="container">
